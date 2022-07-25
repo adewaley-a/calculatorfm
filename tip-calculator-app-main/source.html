@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
+
+
+var x = document.getElementById("zero")
+var y = document.getElementById("zero2")
+
+function Short (tag){
+    return document.getElementById(tag)
+    }
+
+let billin = parseInt(Short("billin"))
+let nopin = parseInt(Short("nopin"))
+let custy = Short("custy")
+
+billin.onchange= function(event){
+    billin.value= event.target.value
+    console.log(billin.value)
+}
+
+custy.onchange= function(event){
+    custy.value= event.target.value
+    console.log(custy.value)
+}
+
+nopin.onchange= function(event){
+    nopin.value= event.target.value
+    console.log(nopin.value)
+}
+
+let tipamount = ( Number(billin.value)* Number(custy.value)/100)/ Number(nopin.value)
+let total = tipamount*nopin.value
+
+console.log(total)
+x.innerHTML='{tipamount}}'
+y.innerHTML=''
+
+
+let btn = document.getElementById('btn')
+btn.addEventListener('click', function(){
+let bill = document.getElementById('billamount').value
+console.log(bill)
+let percent = document.getElementById('tippercent').value
+console.log(percent)
+
+document.getElementById('tip').value = bill*percent/100
+
+})
+
+(billin +((billin*custy/100)/nopin)*nopin)/nopin
+
+let custy = document.getElementById('custy')
+custy.addEventListener('change', function(){
+
+let billin = document.getElementById('billin').value
+console.log(billin)
+let custy = document.getElementById('custy').value
+console.log(custy)
+let nopin = document.getElementById('nopin').value
+console.log(nopin)
+
+let x = (billin*custy/100)/nopin
+console.log(x)
+let zero = document.getElementById('zero')
+zero.innerHTML='$' + x.toFixed(2)
+
+let y = (Number(billin)+x*nopin)/nopin
+console.log(y)
+let zeroth = document.getElementById('zero2')
+zeroth.innerHTML = '$' + y.toFixed(2)
+
+
+})

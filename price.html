@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="price.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+ <div class="cover"> <div class=" splitter"><br/><br/><br/>SPLI<br/>TTER</div>
+   <div class="card">
+       <div class="cards" id="question">
+          <div class="bill">Bill</div>
+          <div class="sec"><img src="tip-calculator-app-main/images/icon-dollar.svg" class="dollar"/>
+               <input type="number" placeholder="0" class="firstin" id="billin"/></div> 
+          <span class="select">Select Tip %</span>
+          
+          <div class="bar">
+            <div class="bars" id="five">5%</div> <div class="bars" id="ten">10%</div>
+            <div class="bars" id="fifteen">15%</div> <div class="bars"id="twenty-five" >25%</div>
+            <div class="bars" id="fifty">50%</div> <div class="bars" id="cus"> <input type="number" placeholder="Custom" class="custom" id="custy"/></div>
+          </div>
+          <span class="number" id="numb">Number of People</span>
+          <div class="sec"><img src="tip-calculator-app-main/images/icon-person.svg" class="dollar"/>
+            <input type="number" placeholder="0" class="secondin" id ="nopin"/></div> 
+       </div> 
+
+
+       <div class="cards" id="answer">
+            <div class="net">
+                <div class="nets" id="tip">Tip Amount<br/><p id="per">/ person</p></div><div class="nets" id="zero">$0.00</div>
+            </div>
+            
+            <div class="net">
+              <div class="nets" id="tip">Total Bill<br/><p id="per">/ person</p></div><div class="nets" id="zero2">$0.00</div>
+          </div>
+          <div class="resetcover"> <button class="reset" id="res">RESET</button></div>
+       </div>
+   </div>
+</div>
+</body>
+<script src="price.js"></script>
+</html>

@@ -1,0 +1,287 @@
+body{
+    background-color:hsl(185, 41%, 84%) ;
+    height: fit-content;
+    width: 100%;
+    font-family: monospace;
+    font-weight: 700;
+}
+*{
+    margin: 0;
+}
+.cover{
+    width: 100%;
+    
+}
+.splitter{
+    font-size: x-large;
+    color:hsl(183, 100%, 15%) ;
+    letter-spacing: 4px;
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 4%;
+    
+    font-weight: 700;
+}
+.card{
+    height: fit-content;
+    width: 58%;
+    display: grid;
+    background-color: white;
+    border-radius: 25px;
+    border: 5px green;
+    margin: auto;
+    padding: 28px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.3em;
+    box-shadow: 7px 4px 90px 6px rgb(170, 209, 209);
+}
+@media(max-width:576px){
+    .card{
+        grid-template-columns: repeat(1,1fr);
+        width: 80%;
+        gap: 4.9em;
+    }
+    .splitter{
+        font-size: 140%;
+        height: 100px;
+    }
+    
+}
+.cards{
+ height: 400px;
+ width: 100%;
+
+ background-color:  hsl(183, 100%, 15%);
+ border-radius: 16px;
+ 
+}
+/*beginning of question style*/
+#question{
+    background-color: white;
+}
+.bill{
+    margin-top: 4%;
+    font-size: large;
+    color: hsl(183, 100%, 15%) ;
+}
+.sec{
+    margin-top: 4%;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 45px;
+}
+.dollar{
+    height: 20px;
+    width: 16px;
+    top: 3px;
+    left: 17px;
+    z-index: 10;
+    position: absolute;
+}
+.firstin{
+    outline-color: hsl(172, 67%, 45%);
+    text-indent: 80%;
+    color: hsl(184, 14%, 56%);
+    height: 26px;
+    width: 90%;
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: 700;
+    border: none;
+}
+::placeholder{
+    color: hsl(184, 14%, 56%);
+    font-family: monospace;
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: center;
+}
+.select{
+    margin-bottom: -50px;
+    color: hsl(183, 100%, 15%);
+    font-size: larger;
+    
+}
+.bar{
+    height: fit-content;
+    width: 90%;
+    margin-bottom: 38px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 1em;
+}
+@media(max-width:576px){
+    .bar{
+        grid-template-columns: repeat(2,3fr);
+    }
+    .custom::placeholder{
+      text-indent: 12%;
+      font-size: 90%;
+    }
+   
+}
+.bars{
+    background-color:hsl(183, 100%, 15%) ;
+    width: 100%;
+    height: 49px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 49px;
+    color: white;
+    font-size: x-large;
+}
+.custom{
+    width: 92%;
+    height: 88%;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: larger;
+    font-family: monospace;
+    border: none;
+    outline-color: hsl(172, 67%, 45%);
+    
+}
+#cus{
+    background-color: rgb(255, 255, 255);
+    color: hsl(183, 100%, 15%);
+    
+}
+.number{
+    color: hsl(183, 100%, 15%);
+    font-size: larger;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.secondin{
+    outline-color: hsl(172, 67%, 45%);
+    text-indent: 80%;
+    color: hsl(184, 14%, 56%);
+    height: 26px;
+    width: 90%;
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: 700;
+    border: none;
+}
+.net{
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    gap: 30%;
+    margin: auto;
+   
+    margin-top: 10%;
+}
+#zero{
+    color: hsl(172, 67%, 45%) ;
+    font-size: 300%;
+}
+#tip{
+    font-size: large;
+    color:  hsl(185, 41%, 84%);
+}
+#per{
+    color: hsla(185, 41%, 84%, 0.781);
+    font-size:medium ;
+}
+#tip2{
+    font-size: large;
+    color:  hsl(185, 41%, 84%);
+    
+}
+#zero2{
+    
+    color: hsl(172, 67%, 45%) ;
+    font-size: 300%;
+}
+.reset{
+    border: none;
+    width: 78%;
+    height: 38%;
+    border-radius: 5px;
+    margin: auto;
+    background-color:hsl(186, 14%, 43%) ;
+    font-weight: 700;
+    color:  hsl(183, 100%, 15%);
+}
+.resetcover{
+    width: 100%;
+    height: 40%;
+    
+    display: flex;
+    justify-content: center;
+    margin-top:75px ;
+}
+@media(max-width:576px){
+    .resetcover{
+        width: 100%;
+        height: 40%;
+        
+        display: flex;
+        justify-content: center;
+        margin-top:30px ;
+    }
+}
+@media(max-width:407px){
+   #answer{
+    height: 270px;
+   }
+   .firstin{
+    text-indent: 73%;
+   }
+   .secondin{
+    text-indent: 74%;
+   }
+   .custom{
+    text-indent: 50%;
+   }
+   #zero{
+    color: hsl(172, 67%, 45%) ;
+    font-size: 250%;
+}
+   #zero2{
+    color: hsl(172, 67%, 45%) ;
+    font-size: 250%;
+    
+}
+.net{
+   gap: 35%;
+}
+#tip{
+    font-size: medium;
+    color:  hsl(185, 41%, 84%);
+}
+#tip2{
+    font-size: large;
+    color:  hsl(185, 41%, 84%);
+}
+.resetcover{
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+    justify-content: center;
+    margin-top:20px ;
+}
+.reset{
+    height: 69%;
+}
+}
+
+@media(max-width:576px){
+    #zero{
+        color: hsl(172, 67%, 45%) ;
+        font-size: 230%;
+    }
+       #zero2{
+        color: hsl(172, 67%, 45%) ;
+        font-size: 230%;
+        
+    }
+    #answer{
+        height: 290px;
+       }
+}
